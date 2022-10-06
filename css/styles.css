@@ -11,10 +11,9 @@
 --active-color: #188CE8;}
 
 body {
-    background-color: var(--bg-light-color);
+    background-color: var(--white-color);
     color: var(--text-secondary-color);
     font-family: Roboto, sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -39,7 +38,7 @@ body {
     color: var(--accent-color);
 }
 /* site-nav */
-.top {background-color: var(--white-color);}
+
 .site-nav .link {
     color: var(--text-primary-color);
     font-weight: 500;
@@ -47,12 +46,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.site-nav .link:hover {
-    color: var(--accent-color)
-}
-.site-nav .link:focus {
-    color: var(--accent-color)
-}
+.site-nav .link:hover,
+.site-nav .link:focus,
 .site-nav .link.current {
     color: var(--accent-color)
 }
@@ -126,18 +121,18 @@ body {
 .opacity {
     color: var(--opacity-color);
 }
-.address:hover {
-    color: var(--accent-color);
-}
+.address:hover,
 .address:focus {
     color: var(--accent-color);
 }
-
 /* buttons */
 .btn-primary {
     cursor: pointer;
     color: var(--white-color);
     background-color: var(--accent-color);
+    border: transparent;
+    border-radius: 4px;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -146,8 +141,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
 }
-.btn-primary:hover {
-    background-color: var(--active-color);}
+.btn-primary:hover,
 .btn-primary:focus {
     background-color: var(--active-color);
 }
@@ -155,18 +149,19 @@ body {
     cursor: pointer;
     color: var(--text-primary-color);
     background-color: var(--bg-middle-color);
+    border: transparent;
+    border-radius: 4px;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;}
-.btn-secondary:hover {
+.btn-secondary:hover,
+ .btn-secondary:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
-}
-.btn-secondary:focus {
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* portfolio */
 .project-title {
