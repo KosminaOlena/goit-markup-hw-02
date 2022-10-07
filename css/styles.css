@@ -58,9 +58,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.head-address .link:hover {
-    color: var(--accent-color);
-}
+.head-address .link:hover,
 .head-address .link:focus {
     color: var(--accent-color);
 }
